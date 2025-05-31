@@ -1,0 +1,28 @@
+module Base
+{
+  /****************************** Cars ******************************/
+
+  item TrailerAgroseeder
+  {
+      Weight    	   	= .01,
+      DisplayName     = Agroseeder,
+      icon 		       	= TrailerAgroseeder,
+      Type        		= Normal,
+  }
+
+  item TrailerAgroplough
+  {
+      Weight    	   	= .01,
+      DisplayName     = Agroplough,
+      icon 		       	= TrailerAgroplough,
+      Type        		= Normal,
+  }
+
+  item Agrotractor
+  {
+      Weight    	   	= .01,
+      DisplayName     = Agrotractor + Keys,
+      icon 		       	= Agrotractor,
+      Type        		= Normal,
+  }
+}

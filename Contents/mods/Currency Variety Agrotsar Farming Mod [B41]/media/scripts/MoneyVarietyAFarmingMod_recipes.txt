@@ -1,0 +1,107 @@
+module MoneyVarietyAgrotsar
+{
+  imports
+  {
+    Base
+  }
+
+  /****************************** Book Purchase Options ******************************/
+    recipe Sell 25 Gems for Agrotsar Farming Company
+    {
+       GemScrap=25,
+       keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+
+       Result: AgrotsarMag,
+       Time: 10.0,
+       Category: Trading,
+    }
+
+/****************************** Defensive Purchase Options ******************************/
+    recipe Sell 1 Silver Bar for a Seeder Plate
+    {
+        SilverBar=1,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+
+        Result: ASeederPlate,
+        Time: 10.0,
+        Category: Trading,
+    }
+
+
+    recipe Sell 1 Silver Bar for a Plowshare
+    {
+        SilverBar=1,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+
+        Result: APlowshare,
+        Time: 10.0,
+        Category: Trading,
+    }
+
+    recipe Sell 1 Silver Bar for a Seeder Tank Small
+    {
+        SilverBar=1,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+
+        Result: ASeederTankSmall,
+        Time: 10.0,
+        Category: Trading,
+    }
+
+    recipe Sell 3 Silver Bar for a Seeder Tank Medium
+    {
+        SilverBar=3,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+
+        Result: ASeederTankMedium,
+        Time: 10.0,
+        Category: Trading,
+    }
+
+    recipe Sell 5 Silver Bar for a Seeder Tank Large
+    {
+        SilverBar=5,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+
+        Result: ASeederTankLarge,
+        Time: 10.0,
+        Category: Trading,
+    }
+
+/****************************** Car Purchase Options ******************************/
+    recipe Sell 50 Pearls for Agroseeder
+    {
+       Pearls=50,
+       keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+
+       Result: TrailerAgroseeder,
+       Time: 10.0,
+       OnCreate:CarCraftingFMTAS_OnCreate,
+       RemoveResultItem:True,
+       Category: Trading,
+    }
+
+    recipe Sell 75 Pearls for Agroplough
+    {
+       Pearls=75,
+       keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+
+       Result: TrailerAgroplough,
+       Time: 10.0,
+       OnCreate:CarCraftingFMTAP_OnCreate,
+       RemoveResultItem:True,
+       Category: Trading,
+    }
+
+    recipe Sell 150 Pearls for Agrotractor
+    {
+       Pearls=150,
+       keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+
+       Result: Agrotractor,
+       Time: 10.0,
+       OnCreate:CarCraftingFMAT_OnCreate,
+       RemoveResultItem:True,
+       Category: Trading,
+    }
+}
